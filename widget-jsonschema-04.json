@@ -1,0 +1,467 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "default": "",
+      "additionalProperties": false
+    },
+    "description": {
+      "type": "string",
+      "default": "",
+      "additionalProperties": false
+    },
+    "keyword": {
+      "type": "array",
+      "additionalProperties": false,
+      "items": {
+                "type": "string"
+            },
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "language": {
+      "type": "array",
+      "additionalProperties": false,
+      "items": {
+                "type": "string"
+            },
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "aggregationlevel": {
+      "type": "string",
+      "additionalProperties": false
+    },
+    "publisher": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "array",
+          "additionalProperties": false,
+          "items": {
+                "type": "string"
+            },
+          "minItems": 0,
+          "uniqueItems": false
+        },
+        "datetime": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "timestamp": {
+          "type": "integer",
+          "default": -1,
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "name",
+        "datetime",
+        "timestamp"
+      ]
+    },
+    "author": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "array",
+          "additionalProperties": false,
+          "items": {
+                "type": "string"
+            },
+          "minItems": 0,
+          "uniqueItems": false
+        },
+        "datetime": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "timestamp": {
+          "type": "integer",
+          "default": -1,
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "name",
+        "datetime",
+        "timestamp"
+      ]
+    },
+    "format": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mimetype": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "mapped_format": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "mapped_format_name": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "mapped_format_specific": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "mimetype",
+        "mapped_format",
+        "mapped_format_name",
+        "mapped_format_specific"
+      ]
+    },
+    "learningresourcetype": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "human": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "value": {
+          "type": "array",
+          "additionalProperties": false,
+          "items": {
+                "type": "string"
+            },
+          "minItems": 0,
+          "uniqueItems": false
+        }
+      },
+      "required": [
+        "human",
+        "value"
+      ]
+    },
+    "intendedenduserrole": {
+      "type": "array",
+      "additionalProperties": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "human": {
+            "type": "string",
+            "default": "",
+            "additionalProperties": false
+          },
+          "value": {
+            "type": "string",
+            "default": "",
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "human",
+          "value"
+        ]
+      }
+    },
+    "context": {
+      "type": "array",
+      "additionalProperties": false,
+      "items": {
+            "type": "string"
+        },
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "typicalagerange": {
+      "type": "string",
+      "default": "",
+      "additionalProperties": false
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "human": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "value": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "human",
+        "value"
+      ]
+    },
+    "copyright": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "human": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "value",
+        "human"
+      ]
+    },
+    "discipline": {
+      "type": "object",
+      "patternProperties": {
+          "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$": {
+              "type": "string"
+          }
+      },
+      "additionalProperties": false
+    },
+    "educationallevel": {
+      "type": "object",
+      "patternProperties": {
+          "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$": {
+              "type": "string"
+          }
+      },
+      "additionalProperties": false
+    },
+    "educationalobjective": {
+      "type": "object",
+      "patternProperties": {
+          "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$": {
+              "type": "string"
+          }
+      },
+      "additionalProperties": false
+    },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "seconds": {
+          "type": "integer",
+          "default": -1,
+          "additionalProperties": false
+        },
+        "human": {
+          "type": "string",
+          "default": "Onbekend",
+          "additionalProperties": false
+        },
+        "typicallearningtime": {
+           "type": "integer",
+           "default": -1,
+           "additionalProperties": false
+        },
+        "duration": {
+            "type": "integer",
+            "default": -1,
+            "additionalProperties": false
+        }
+      },
+      "required": [
+        "seconds",
+        "human",
+        "typicallearningtime",
+        "duration"
+      ]
+    },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "name": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "accessrights": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "human": {
+              "type": "string",
+              "default": "",
+              "additionalProperties": false
+            },
+            "value": {
+              "type": "string",
+              "default": "",
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "human",
+            "value"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "accessrights"
+      ]
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mimetype_icon": {
+          "type": "string",
+          "default": "http://widget.edurep.nl/icon/mimetypes/openworld/48/unknown.png",
+          "additionalProperties": false
+        },
+        "icon": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "thumbnail": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "previewimage": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "mimetype_icon",
+        "icon",
+        "thumbnail",
+        "previewimage"
+      ]
+    },
+    "identifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "recordidentifier": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "recordidentifier"
+      ]
+    },
+    "url": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "location": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "embed": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        },
+        "landingpage": {
+          "type": "string",
+          "default": "",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "location",
+        "embed",
+        "landingpage"
+      ]
+    },
+    "social": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nrofreviews": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "additionalProperties": false
+        },
+        "nrofratings": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "additionalProperties": false
+        },
+        "nroftags": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "additionalProperties": false
+        },
+        "rating": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 5,
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "nrofreviews",
+        "nrofratings",
+        "nroftags",
+        "rating"
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "keyword",
+    "language",
+    "aggregationlevel",
+    "publisher",
+    "author",
+    "format",
+    "learningresourcetype",
+    "intendedenduserrole",
+    "context",
+    "typicalagerange",
+    "cost",
+    "copyright",
+    "discipline",
+    "educationallevel",
+    "educationalobjective",
+    "time",
+    "repository",
+    "image",
+    "identifier",
+    "url",
+    "social"
+  ]
+}
