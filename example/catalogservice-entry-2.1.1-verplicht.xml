@@ -1,0 +1,25 @@
+<Entry>
+	<ProductId>123581321</ProductId>
+	<Publisher>Fibonacci Uitgevers</Publisher>
+	<PublisherThumbnailLocation>https://78.media.tumblr.com/avatar_28fa52cef1f2_128.png</PublisherThumbnailLocation>
+	<Title>Rekenen met patronen</Title>
+	<Authors>
+		<Author>Adolf Zeising</Author>
+	</Authors>
+	<IntendedEndUserRole>Onderwijsvolger</IntendedEndUserRole>
+	<Medium>Anders</Medium>
+	<IsConsumptionProduct>false</IsConsumptionProduct>
+	<Sectors>
+		<Sector>WO</Sector>
+	</Sectors>
+	<Courses>
+		<Course>OBK testcourse</Course>
+	</Courses>
+	<Levels>
+		<Level>OBK testlevel</Level>
+	</Levels>
+	<SaleUnitSize>0</SaleUnitSize>
+	<Currency>EURO</Currency>
+	<PriceIsIndicative>false</PriceIsIndicative>
+	<IsLicensed>false</IsLicensed>
+</Entry>
