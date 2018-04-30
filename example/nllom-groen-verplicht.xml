@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_v1p2 http://www.imsglobal.org/xsd/imsmd_v1p2p4.xsd">
+  <general>
+    <title>
+      <langstring xml:lang="nl">De titel van een leerobject : over hoe je titels en ondertitels vastlegt</langstring>
+    </title>
+    <catalogentry>
+      <catalog>URI</catalog>
+      <entry>
+        <langstring xml:lang="x-none">urn:isbn:9789034553966</langstring>
+      </entry>
+    </catalogentry>
+    <language>nl</language>
+    <description>
+      <langstring xml:lang="nl">Dit leerobject laat aan de hand van code voorbeelden zien hoe de metadata van een leerobject eruit moet zien.</langstring>
+    </description>
+    <keyword>
+      <langstring xml:lang="nl">toepassingsprofiel van LOM</langstring>
+    </keyword>
+    <aggregationlevel>
+      <source>
+        <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_aggregationlevel_czp_20060628.xml</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">2</langstring>
+      </value>
+    </aggregationlevel>
+  </general>
+  <metametadata>
+    <metadatascheme>LOMv1.0</metadatascheme>
+    <metadatascheme>nl_lom_v1p0</metadatascheme>
+  </metametadata>
+  <technical>
+    <!-- Aanwezigheid van 4.3 Location is VEREIST als de beschreven content web-based is. -->
+    <location>http://example.org/file.abc</location>
+  </technical>
+  <educational>
+    <intendedenduserrole>
+      <source>
+        <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_intendedenduserrole_lomv1p0_20060628.xml</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">learner</langstring>
+      </value>
+    </intendedenduserrole>
+    <!-- Aanwezigheid van 5.6 Context is VEREIST als 1.8 Aggregation Level de waarden "3" of "4" heeft. -->
+    <context>
+      <source>
+        <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_context_czp_20060628.xml</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">VO</langstring>
+      </value>
+    </context>
+    <typicalagerange>
+      <langstring xml:lang="x-none">8-13</langstring>
+    </typicalagerange>
+  </educational>
+  <rights>
+    <cost>
+      <source>
+        <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_cost_lomv1p0_20060628.xml</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">no</langstring>
+      </value>
+    </cost>
+    <copyrightandotherrestrictions>
+      <source>
+        <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_copyrightsandotherrestrictions_lomv1p0_20060628.xml</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">yes</langstring>
+      </value>
+    </copyrightandotherrestrictions>
+    <!-- Gebruik van 6.3 Description is VERPLICHT wanneer in veld 6.2 het standaard LOM vocabulaire wordt gebruikt met waarde yes. -->
+    <description>
+      <langstring xml:lang="x-none">De copyright tekst die van toepassing is op het leermiddel.</langstring>
+    </description>
+  </rights>
+  <!-- Al het groen materiaal heeft het zogenaamde groene vlaggetje (aangeven dat het behoort tot het groene vakgebied) --> 
+  <classification>
+    <purpose>
+     <source>
+       <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_classification_purpose_czp_20060628.xml</langstring>
+     </source>
+     <value>
+       <langstring xml:lang="x-none">discipline</langstring>
+     </value>
+   </purpose>
+   <taxonpath>
+      <source>
+       <langstring xml:lang="x-none">http://purl.edustandaard.nl/begrippenkader</langstring>
+     </source>
+     <taxon>
+       <id>5e86dc82-1981-48df-bbe5-abd4a9b3767b</id>
+     </taxon>
+   </taxonpath>
+  </classification>
+  <!-- Gebruik van een classificatie met Purpose="education level" is VERPLICHT wanneer 1.8 Aggregation Level de waarde "3" of "4" heeft. -->
+  <classification>
+    <purpose>
+       <source>
+          <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_classification_purpose_czp_20060628.xml</langstring>
+       </source>
+       <value>
+          <langstring xml:lang="x-none">educational level</langstring>
+       </value>
+    </purpose>
+    <taxonpath>
+       <source>
+          <langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_classification_educationallevel_czp_20071115.xml</langstring>
+       </source>
+       <taxon>
+          <id>po_groep5</id>
+          <entry>
+             <langstring xml:lang="x-none">PO Groep 5</langstring>
+          </entry>
+       </taxon>
+    </taxonpath>
+  </classification>
+</lom>
