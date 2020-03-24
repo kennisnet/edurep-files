@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!-- voorbeeld catalogservice entry record -->
+<ReadCatalogResult xmlns="http://dt2.eck.nl/schema/catalogservice/v2.3">
+	<Entries>
+		<Entry>
+			<ProductId>steam://store/289070</ProductId>
+			<Publisher>2K</Publisher>
+			<PublisherThumbnailLocation>https://downloads.2kgames.com/2k/img/layout/footer/2klogofooter.png</PublisherThumbnailLocation>
+			<ProductThumbnailLocation>http://cdn.akamai.steamstatic.com/steam/apps/289070/header.jpg?t=1510266672</ProductThumbnailLocation>
+			<ProductFamilyName>Civilization</ProductFamilyName>
+			<Title>Civilization VI</Title>
+			<Authors>
+				<Author>Firaxis</Author>
+				<Author>Aspyr</Author>
+			</Authors>
+			<Description>Civilization VI offers new ways to interact with your world, expand your empire across the map, advance your culture, and compete against history’s greatest leaders to build a civilization that will stand the test of time. Play as one of 20 historical leaders including Roosevelt (America) and Victoria (England). </Description>
+			<Environments>
+				<Platform>Windows</Platform>
+				<Device>pc ready</Device>
+				<Browser>Chrome</Browser>
+			</Environments>
+			<ContentLocation>https://civilization.com/</ContentLocation>
+			<AccessLocation>http://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/</AccessLocation>
+			<SubProducts>
+				<ProductId>steam://store/645400</ProductId>
+				<ProductId>steam://store/645402</ProductId>
+			</SubProducts>
+			<FirstPublishedDate>2016-10-20T00:00:00Z</FirstPublishedDate>
+			<DeprecationDate>2019-01-01T00:00:00Z</DeprecationDate>
+			<SupportedUntilDate>2020-01-01T00:00:00Z</SupportedUntilDate>
+			<EndOfLifeDate>2020-01-01T00:00:00Z</EndOfLifeDate>
+			<LastRevisionDate>2019-01-01T00:00:00Z</LastRevisionDate>
+			<FollowupProduct>steam://store/999999</FollowupProduct>
+			<Edition>basic</Edition>
+			<Version>1.0</Version>
+			<ProductState>Leverbaar</ProductState>
+			<!-- more lifecycle here -->
+			<InformationLocation>https://en.wikipedia.org/wiki/Civilization_VI</InformationLocation>
+			<IntendedEndUserRole>Onderwijsvolger</IntendedEndUserRole>
+			<Medium>Downloadable installer</Medium>
+			<IsConsumptionProduct>false</IsConsumptionProduct>
+			<ProductUsages>
+				<ProductUsage>Oefenmateriaal</ProductUsage>
+			</ProductUsages>
+			<Sectors>
+				<Sector>PO</Sector>
+				<Sector>VO</Sector>
+			</Sectors>
+			<Courses>
+				<Course>Geschiedenis</Course>
+			</Courses>
+			<Levels>
+				<Level>Alle groepen</Level>
+			</Levels>
+			<Years>
+				<Year>jaar 1</Year>
+				<Year>jaar 2</Year>
+				<Year>jaar 3</Year>
+				<Year>jaar 4</Year>
+				<Year>jaar 5</Year>
+				<Year>jaar 6</Year>
+				<Year>jaar 7</Year>
+				<Year>jaar 8</Year>
+			</Years>
+			<Subjects>
+				<Subject>Geschiedenis</Subject>
+			</Subjects>
+			<CurriculumInformationLocation>https://kernprogrammabrowser.kennisnet.nl</CurriculumInformationLocation>
+			<SaleUnitSize>1</SaleUnitSize>
+			<Supplier>Steam</Supplier>
+			<SupplierThumbnailLocation>https://vignette.wikia.nocookie.net/alienswarm/images/9/94/Steam.png</SupplierThumbnailLocation>
+
+			<Prices>
+				<Currency>EUR</Currency>
+				<Price>
+					<Amount>4300</Amount>
+					<VAT>21.00</VAT>
+				</Price>
+				<Price>
+					<Amount>3300</Amount>
+					<VAT>9.00</VAT>
+			</Price></Prices>
+
+			<PriceIsIndicative>true</PriceIsIndicative>
+			<!-- not really licensed, just for sake of completeness -->
+			<IsLicensed>true</IsLicensed>
+			<ActivationBefore>
+				<ActivationBeforeDays>5000</ActivationBeforeDays>
+			</ActivationBefore>
+			<LicenseAvailabilityOptions>Fixed start with duration</LicenseAvailabilityOptions>
+			<LicenseStartDate>2018-06-01</LicenseStartDate>
+			<LicenseDuration>P2D</LicenseDuration>
+			
+			<LicenseCount>1</LicenseCount>
+			<AdditionalLicenseOptions>
+				<AdditionalLicenseOption>Inkijkexemplaar</AdditionalLicenseOption>
+			</AdditionalLicenseOptions>
+			<IsCatalogItem>true</IsCatalogItem>
+			<Copyright>cc-by-40</Copyright>
+		</Entry>
+	</Entries>
+  	<numEntries>1</numEntries>
+ 	<firstEntry>1</firstEntry>
+</ReadCatalogResult>
